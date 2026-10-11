@@ -1,0 +1,152 @@
+config_version = 14
+
+[accessibility]
+ui_scale = 1.1500000096857548
+
+[audio]
+enable_overdrive = true
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    capsule = true
+    center = [ "audio_visualizer", "clock", "cat", "weather", "media" ]
+    end = [
+        "tray",
+        "notifications",
+        "clipboard",
+        "widget",
+        "bar",
+        "volume",
+        "keyboard_layout",
+        "network",
+        "bluetooth",
+        "brightness",
+        "battery",
+        "wallpaper",
+        "session"
+    ]
+    margin_ends = 0
+    padding = 10
+    scale = 1.1000000089406967
+    start = [ "launcher", "cpu", "sysmon", "ram", "taskbar", "screenshot" ]
+    thickness = 40
+    widget_spacing = 9
+
+        [bar.default.dead_zone.actions]
+        left = "panel-toggle launcher"
+        middle = "settings-toggle"
+
+[brightness]
+minimum_brightness = 0.99999997764825821
+sync_all_monitors = true
+
+[dock]
+icon_size = 45
+launcher_position = "start"
+layer = "overlay"
+main_axis_padding = 0
+radius = 11
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[hot_corners]
+enabled = true
+
+    [hot_corners.top_right]
+    action = "launcher"
+
+[location]
+auto_locate = true
+
+[plugins]
+enabled = [
+    "yuuto/arch-updater",
+    "yuuto/calculator",
+    "nocode-96/cmd-runner",
+    "nightwatch75/file-search",
+    "3ri4ng0ld/ip-monitor",
+    "noctalia/bongocat",
+    "noctalia/wallhaven"
+]
+
+[shell]
+button_borders = false
+card_borders = false
+corner_radius_scale = 2.0
+font_family = "Adwaita Mono"
+input_borders = false
+lang = "de"
+panel_anchor_bar = "default"
+password_style = "random"
+polkit_agent = true
+popup_borders = false
+screen_time_enabled = true
+
+    [shell.animation]
+    speed = 1.1000000163912773
+
+    [shell.keyboard_layout.custom_labels]
+    "Deutsch de" = "de"
+
+    [shell.launcher]
+    pinned = [ ]
+
+    [shell.panel]
+    floating_layer = "top"
+    open_near_click_control_center = true
+
+    [shell.screen_corners]
+    enabled = true
+
+    [shell.shadow]
+    direction = "down_right"
+
+[theme]
+community_palette = "Catppuccin Mocha Mauve-Lavender"
+source = "community"
+
+    [theme.templates]
+    builtin_ids = [ "labwc" ]
+
+[wallpaper]
+directory = "__HOME__/Wallpaper"
+transition_duration = 2800
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "__HOME__/Wallpaper/Wallpaper.jpg"
+
+    [wallpaper.last]
+    path = "__HOME__/Wallpaper/Wallpaper.jpg"
+
+[weather]
+refresh_minutes = 5
+
+[widget.audio_visualizer]
+width = 75
+
+[widget.bar]
+type = "yuuto/calculator:bar"
+
+[widget.cat]
+audio_spectrum = true
+type = "noctalia/bongocat:cat"
+
+[widget.clock]
+scale = 1.1500000000000001
+
+[widget.launcher]
+glyph = "asterisk"
+
+[widget.media]
+hide_when_no_media = true
+max_length = 800
+
+[widget.sysmon]
+stat = "gpu_usage"
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"
