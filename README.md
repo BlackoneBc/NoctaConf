@@ -5,7 +5,7 @@ Installiert [Noctalia v5](https://docs.noctalia.dev) und spielt meine Config ein
 ## Ein Befehl für alles
 
 ```bash
-git clone https://github.com/DEIN-USER/noctalia-dotfiles ~/noctalia-dotfiles && bash ~/noctalia-dotfiles/setup.sh
+git clone https://github.com/BlackoneBc/NoctaConf ~/noctalia-dotfiles && bash ~/noctalia-dotfiles/setup.sh
 ```
 
 Funktioniert auch aus **fish**, das Skript läuft selbst mit bash. Es liest zuerst das System aus (Distro, Desktop, Pakete, vorhandene Config, Monitore) und fragt dann, was passieren soll.
